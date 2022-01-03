@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="card" style="width:320px; border: none;">
+			<form name="calc">
+				<input type="text" name="Answer" id="Answer" class="form-control">
+				<div class="row mt-3">
+					<div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "1" onclick = "calc.Answer.value += '1' "></div> 
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "2" onclick = "calc.Answer.value += '2' "></div>
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "3" onclick = "calc.Answer.value += '3' "></div>
+					<div class="col-3"><input type = "button" value = "=" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = eval(calc.Answer.value) ">  </div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "4" onclick = "calc.Answer.value += '4' "></div>
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "5" onclick = "calc.Answer.value += '5' "></div>
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "6" onclick = "calc.Answer.value += '6' "></div> 
+					<div class="col-3"><input type = "button" value = "+" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value += '+' "></div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "7" onclick = "calc.Answer.value += '7' "></div> 
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "8" onclick = "calc.Answer.value += '8' "></div>  
+                    <div class="col-3"><input type = "button" class="btn btn-sm pl-4 pr-4 bg-info" value = "9" onclick = "calc.Answer.value += '9' "></div> 
+					<div class="col-3"><input type = "button" value = "-" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value += '-' "></div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-3"><input type = "button" value = "%" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value += '%' "></div>
+					<div class="col-3"><input type = "button" value = "tan" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = Math.tan(calc.Answer.value) "></div>
+					<div class="col-3"><input type = "button" value = "0" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value += '0' "></div>
+					<div class="col-3"><input type = "button" value = "*" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value += '*' "></div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-3"><input type = "button" value = "Sin" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = Math.sin(calc.Answer.value) "></div>
+					<div class="col-3"><input type = "button" value = "sec" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = 1/Math.cos(calc.Answer.value) "></div>
+					<div class="col-3"><input type = "button" value = "√" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = Math.sqrt(calc.Answer.value) "></div>
+					<div class="col-3"><input type = "button" value = "clr" class="btn btn-sm pl-4 pr-4 bg-info" onclick = "calc.Answer.value = '' "></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
